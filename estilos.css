@@ -7,12 +7,17 @@ html{
     background-color: #ededd3;
     color: #426f58;
     justify-content: center;
+    padding: 0px;
+    margin: 0px;
 }
 /*Nota: cambié el margin de la version escritorio ya que esta semana mi hermano me presto su monitor mientras arreglan su compu, ya que yo estab usando uan tele viejita y los colores se veian muy saturados, y este monitor nuevo es más grande de la tele q tenia asi que veo todo más grande y siento que necesitaba mas margin porque sino se veia muy expandido todo y nome gustaba. Tambien aproveche a rehacer el css y reorganizarlo, creo que quedo más ordenado, del html no toque mucho mas, solo agregué la galeria que me faltaba*/
 body{
     width: 100%;
     justify-self: center;
     overflow-x: hidden;
+        justify-content: center;
+    padding: 0px;
+    margin: 0px;
 }
 header{
     width: 100%;
@@ -20,7 +25,7 @@ header{
 }
 
 nav{
-    background-color: rgb(237 237 211 / 0.5);;
+    background-color: rgb(237 237 211 / 0.5);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -67,7 +72,6 @@ footer{
     color: #ededd3;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
-    padding: 30px;
     display: flex;
     flex-direction: row;
     align-self: center;
@@ -181,10 +185,10 @@ li{
     gap: 20px;
     justify-self: center;
     background-image: radial-gradient( #6b9680, #ededd3, #ededd3);
-    margin-bottom: 110px;
+    margin-bottom: 200px;
 }
 .welcome h1{
-    margin-top: 200px;
+    margin-top: 280px;
     margin-bottom: 20px;
 }
 .tags{
@@ -221,7 +225,7 @@ li{
   position: absolute;
   display: flex;
   width: max-content;
-  animation: deslizar 20s linear infinite;
+  animation: deslizar 40s linear infinite;
   top: 0;
   left: 0;
 }
@@ -245,7 +249,6 @@ li{
   }
 }
 
-
 .about-me{
     background-color: #426f58;
     color: #ededd3;
@@ -253,6 +256,18 @@ li{
     padding-right: 350px;
     padding: 30px 400px 50px 400px;
 }
+
+
+.back-gradient{
+    background: linear-gradient(#426f58, #ededd3);
+    height: 400px;
+    width: 100%;
+    position: relative;
+    top: -50px;
+    z-index: 1;
+}
+
+
 
 /***********************PORTAFOLIO***********************/
 
@@ -342,7 +357,7 @@ input{
     font-weight: 600;
     font-size: 20px;
 }
-.enviar::hover{
+.enviar:hover{
     background-color: #ededd3;
     color: #426f58;
     border-radius: 40px;
@@ -353,18 +368,22 @@ input{
     display: flex;
     flex-direction: row;
     gap: 20px;
+    padding: 0px 60px 10px 50px;
+    justify-self: center;
+    width: fit-content;
 }
 
 .contenedor-redes-sociales{
-    margin-top: 50px;
-    justify-content: center;    
+    padding: 100px 30px 0px 30px;
+    justify-self: center; 
+
 }
 
 .redes{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 20px;
+    gap: 80px;
 }
 
 .redes a{
@@ -375,49 +394,89 @@ input{
     border-style: solid;
     text-decoration: none;
     font-family: "Courier Prime";
+    color: #426f58;
+}
+.redes a:hover{
+    background-color: #426f58;
+    color: #ededd3;
+    border-radius: 40px;
+    border-style: solid;
+    border-color: #426f58;
 }
 
 
 /***********************FIN FORMULARIO***********************/
 
 /*MEDIA QUERIES*/
-@media screen and (max-width:1200px){
+@media screen and (max-width:1600px) {
     html{
-        margin: 0px 20px 0px 20px;  
+        max-width: fit-content; 
         display: flex;
+        justify-self: center;
     }
-    nav{
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-    }
-    footer{
-        flex-direction: column;
-        width: 100%;
-    }
-}
-@media screen and (max-width:900px){
-    html{
-        margin: 0px 20px 0px 20px;  
-        display: flex;
-    }
-    nav{
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-    }
-    footer{
-        flex-direction: column;
-    }
-}
 
+
+    h1{
+        font-size: 150px;
+    }
+
+    .tags{
+        width: fit-content;
+        gap: 50px;
+        justify-self: center;
+        align-items: center;
+        align-self: center;
+        margin-bottom: 0px;
+    }
+
+    .tags h4{
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .about-me{
+
+        z-index: 1;
+        padding: 1px 100px 0px 100px;
+        margin-left: -10px;
+    }
+    .about-me p{
+        font-size: 20px;
+    }
+    .back-gradient{
+        height: 300px;
+        width: 1000%;
+        position: relative;
+        top: 0px;
+        z-index: 66;
+        margin-left: -10px;
+    }
+    /*formulario*/
+
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    input{
+        width:100%;
+    }
+
+
+
+
+
+
+}
 @media screen and (max-width:600px) {
     html{
-        max-width: 100%;
-        margin: 0px 20px 0px 20px;  
+        max-width: fit-content; 
         display: flex;
-        
         justify-self: center;
+    }
+    h2{
+        font-size: 30px;
+        line-height: 50px;
     }
     header{
         width: 100%;
@@ -426,6 +485,7 @@ input{
         display: flex;
         flex-direction: column;
         gap: 10px;
+        background-color: #ededd3e0;
     }
     nav a{
         /*Probe con todos los align y justify al center y ninguno los movio al centor, asi que queda medio al costado. El coloreado queda en el centro, pero la palabra en si no*/
@@ -444,44 +504,150 @@ input{
     footer{
         flex-direction: column;
     }
+    h1{
+        font-size: 100px;
+
+    }
+
+    .tags{
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        gap: 10px;
+
+        justify-self: center;
+        align-items: center;
+        align-self: center;
+        margin-bottom: 0px;
+    }
+
+    .tags h4{
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .about-me{
+        width: 100%;
+        padding: 0px;
+        z-index: 1;
+        padding: 20px 15px 10px 15px;
+        margin-left: -10px;
+    }
+    .about-me p{
+        font-size: 20px;
+    }
+    .back-gradient{
+        height: 200px;
+        width: 1000%;
+        position: relative;
+        top: 0px;
+        z-index: 66;
+        margin-left: -10px;
+    }
+    /*formulario*/
+
+
+}
+
+@media screen and (max-width:600px) {
+    html{
+        max-width: fit-content; 
+        display: flex;
+        justify-self: center;
+    }
+    h2{
+        font-size: 30px;
+        line-height: 50px;
+    }
+    header{
+        width: 100%;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #ededd3e0;
+    }
+    nav a{
+
+        width: 100%;
+        padding: 0px;
+        align-self: center;
+        padding: 0px 20px 0px 20px;
+    }
+    nav a:hover{
+        background-color: #426f58;
+        color: #ededd3;
+        border-radius: 20px;
+        padding: 0px 20px 0px 20px;
+ 
+    }
+    footer{
+        flex-direction: column;
+    }
+    h1{
+        font-size: 100px;
+
+    }
+
+    .tags{
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        gap: 10px;
+
+        justify-self: center;
+        align-items: center;
+        align-self: center;
+        margin-bottom: 0px;
+    }
+
+    .tags h4{
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .about-me{
+        width: 100%;
+        padding: 0px;
+        z-index: 1;
+        padding: 20px 15px 10px 15px;
+        margin-left: -10px;
+    }
+    .about-me p{
+        font-size: 20px;
+    }
+    .back-gradient{
+        height: 200px;
+        width: 1000%;
+        position: relative;
+        top: 0px;
+        z-index: 66;
+        margin-left: -10px;
+    }
+    /*formulario*/
+    .formulario{
+        flex-direction: column;
+        padding: 100px 10px 20px 20px;
+    }
+    form{
+        width: fit-content;
+    }
+    .contenedor-redes-sociales{
+        align-self: center;
+        justify-items: center;
+        width: fit-content;   
+        padding: 10px 0px 10px 10px;
+    }
+
+    .redes{
+        flex-direction: column;
+        width: fit-content;
+        gap: 20px;
+    }
+
 }
 
 
 
-
-
-
-/*
-Nota: intenté hacer un menu desplegable como el del prototipo utilizando los details y con el display=none, y que tipo cuando este en el media de 600 se viera visible el details y cuando hubiera más px de pantalla se ocultara y se mostrara el nav normal/original (el nav desktop), pero al final no me salio, no se por que me salian dos estrellitas cuando lo pasaba a 600px y ninguna me dejaba clickearla para expandirla, asi que lo deje asi
-
-
-details > summary {
-    list-style-type: "✦︎";
-    color: #426f58;
-}
-
-details[open] > summary {
-    list-style-type: "✦︎";
-    color: #426f58;
-}
-
-details[closed] > summary {
-    list-style-type: "✦︎";
-    color: #426f58;
-}*/
-
-
-
-
-
-
-/*
-Colores: 
-#ededd3 beige
-#426f58 verde oscuro
-
-font-family:
-"Titillium Web";
-"Courier Prime"
-*/
 
