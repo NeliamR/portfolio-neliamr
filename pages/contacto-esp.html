@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto </title>
+    <link rel="icon" type="image/x-icon" href="../img/favicon.png">
+    <link href="../estilos.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">✦︎Inicio✦︎</a>
+            <a href="./portafolio-esp.html">✦︎Portafolio✦︎</a>
+            <a href="./contacto-esp.html">✦︎Contacto✦︎</a>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="idiomas">
+            <a href="./contacto.html" class="otra">ENG</a>
+            <a href="./contacto-esp.html" class="actual">ESP</a>
+        </div>
+        <div class="formulario">
+            <section>
+                <h2> Contáctame!</h2>
+                <div>
+                    <p>* campos obligatorios</p>
+                </div>
+                
+            </section>
+            
+            <form action="https://formsubmit.co/aldanricarte@gmail.com" method="post" autocomplete="off">
+                
+                <label for="Nombre">Nombre *</label>
+                <input type="text" name="Nombre" id="Nombre" maxlength="30" placeholder="Jane Doe" required>
+
+                <label for="Telefono">Teléfono</label>
+                <input type="text" name="Telefono" id="Telefono" placeholder="+11 1234 5678">
+                
+                <label for="Email">Correo *</label>
+                <input type="email" name="Email" id="Email" placeholder="correo@gmail.com" required>  
+
+                <label for="Tipo de pedido">Tipo de pedido</label>
+                <div class="tipo-de-pedido">
+                <label><input type="radio" name="Consulta" value="Consulta" id="Consulta">Consulta</label>
+                <label><input type="radio" name="Editorial" value="Editorial" id="Editorial"> Diseño editorial</label>
+                <label><input type="radio" name="Ilustración" value="Ilustración" id="Ilustración"> Ilustración</label>
+                <label><input type="radio" name="Prototipos" value="Prototipos" id="Prototipos"> Prototipos</label>
+                </div>
+               <label for="Mensaje">Mensaje</label>
+                <input type="text" name="Mensaje" id="Mensaje" maxlength="10000" placeholder="Tengo consultas sobre..." required>
+                <input type="submit" class="enviar">
+            </form>
+        </div>
+
+        <section class="contenedor-redes-sociales">
+                <h3>Podés encontrarme en mis redes sociales también:</h3>
+                <div class="redes">
+                    <a href="https://www.behance.net/aaldanaricarte" target="_blank" class="red-social">
+                        Behance
+                    </a>
+                    <a href="https://www.linkedin.com/in/neliamricarte" target="_blank" class="red-social">
+                        LinkedIn
+                    </a>
+                    <a href="https://www.instagram.com/_neliamr/" target="_blank" class="red-social">
+                        Instagram
+                    </a>
+                    <a href="https://neliamricarte.tumblr.com" target="_blank" class="red-social">
+                        Tumblr
+                    </a>
+                </div>
+            </section>
+    </main>
+
+    <footer>
+        <p> © Todos los derechos reservados</p>
+        <p> ✦︎2025 | Ricarte Aldana Mailén</p>
+    </footer>
+    
+</body>
+</html>
+
+<!--
+
+SUBIR A MAIN GIT ir a consola.
+escribir |  git status
+            git add . (el punto añade todo los cambios, otherwise poner nombre especifico file)
+            git commit -m "texto descripcion q se cambio"
+
+            git push -u origin main
+----------------------------------
+            git pull para llamar los cambios hechos en github x otra personas, hacer esto antes de empezar a cambiar algo x si le pusieron notas o cosas asi)
+
+
+----------------------------------
+
+-->

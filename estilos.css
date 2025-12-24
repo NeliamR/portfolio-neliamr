@@ -23,6 +23,51 @@ header{
     width: 100%;
     margin-top: 10px;
 }
+.idiomas{
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    width: fit-content;
+    background-color: #6b9680c0;
+    font-family: "Titillium Web";
+    font-weight: 600;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    width: fit-content;
+    
+    left: 50%;
+    margin-top: 10px;
+    transform: translateX(-50%);
+
+    position: fixed;
+    z-index: 50;
+    opacity: 0.9;
+}
+
+.idiomas a{
+    padding: 5px 20px 5px 20px;
+    text-decoration: none;
+    font-size: 14px
+}
+
+
+.actual{
+    background-color: #ededd3d7;
+    border-color: #6b9680;
+    border-radius: 20px;
+    border-width: 2px;
+    border-style: solid;
+}
+.actual a{
+    color: #6b9680;
+}
+
+.otra a{
+    color:#ededd3 ;
+}
 
 nav{
     background-color: rgb(237 237 211 / 0.5);
@@ -271,7 +316,11 @@ li{
 
 /***********************PORTAFOLIO***********************/
 
-
+.estructura-index{
+    width: fit-content;
+    align-content: center;
+    justify-self: center;
+}
 .grilla-imagenes{
     display: grid;
     grid-template-columns: 300px 300px 300px;
@@ -283,6 +332,7 @@ li{
     margin: 0px 0px 50px 0px;
 
 }
+
 .grilla-item{
     width: 100%;
     height: 320px;
@@ -295,11 +345,21 @@ li{
     justify-content: center;
     justify-items: center;
     padding: 10px;
+    background-color: #ededd3be;
     border-radius: 20px;
     border-color: #426f58;
     border-width: 2px;
     border-style: solid;
     transition: background-color 0.5s;
+}
+
+.grilla-item a{
+    color: #426f58;
+    text-decoration: none;
+}
+.grilla-item {
+    color: #426f58;
+    text-decoration: none;
 }
 
 .grilla-item:hover{
@@ -309,6 +369,50 @@ li{
     scale: 1.05;
 }
 
+
+.verde{
+    background-color: #426f58;
+    width: 100%;
+    height: 2px;
+    margin-bottom: 20px;
+}
+.exp-galeria{
+    width: fit-content;
+    justify-self: center;
+}
+
+.exp-galeria img{
+    width: 1200px;
+}
+
+.item-videos{
+    border-radius: 20px;
+    padding: 20px 20px 20px 20px;
+    color: #426f58;
+    filter: drop-shadow(0px 4px 5px #424242);
+}
+video::-webkit-media-controls-play-button {
+  background-color: #426f58;
+  border-radius: 20%;
+  width: 20px;
+  height: 40px;
+  margin: 5px;
+}
+video::-webkit-media-controls-play-button:hover{
+    background-color: #ededd3;
+}
+.proyect-description{
+    display: flex;
+    flex-direction: row ;
+    gap: 20px;
+    padding: 20px 100px 50px 100px;
+}
+.proyect-description p{
+    width:70%;
+}
+.description-text{
+    flex-direction: column;
+}
 
 /***********************FIN PORTAFOLIO***********************/
 
